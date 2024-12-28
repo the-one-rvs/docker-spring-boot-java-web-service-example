@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools{
         jdk 'OpenJDK8'
-        maven 'jenkins-maven3'
+        maven 'jenkins-maven'
         
     }
 
