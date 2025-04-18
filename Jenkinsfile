@@ -20,7 +20,7 @@ pipeline {
         stage('Docker build and run') {
             steps {
                 script{
-                    withDockerRegistry(credentialsId: 'docker-hub-credentials') {
+                    withDockerRegistry(credentialsId: 'dockerhubcred') {
                         // some block
                         sh "docker build -t quasarcelestio/example:latest . "
                         sh "docker push  quasarcelestio/example:latest"
